@@ -52,7 +52,6 @@ S3 Object Resource Uploads image.png into the bucket.
 
 Terraform Configuration (main.tf) 
 
-hcl 
 
 provider "aws" { 
  region = "your-region-code" 
@@ -85,7 +84,6 @@ Deployment Workflow
 
 1. Initialize Terraform 
 
-Code 
 
 terraform init 
  
@@ -98,21 +96,15 @@ Terraform initially returned:
 
 I resolved this by configuring AWS CLI: 
 
-Code 
-
 aws configure 
  
 
 3. Preview Changes 
 
-Code 
-
 terraform plan 
  
 
 4. Apply the Configuration 
-
-Code 
 
 terraform apply 
  
